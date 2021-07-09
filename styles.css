@@ -1,7 +1,15 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+h4{
+    font-size: 200%;
+    text-align: center;
+}
 .pageHeader{
     display: flex;
     justify-content: center;
-    font: 2rem bold;
+    font: 4rem bold;
     margin-bottom: 2rem;
     
 }
@@ -12,9 +20,42 @@
     justify-content: space-around;
 }
 .shop{
-    border: 1px dashed black;
+    border: 1px solid rgb(102, 232, 38);
+    border-radius: 8px;
     flex-basis: 30%;
     padding: .4em;
     margin-right: 1em;
+    margin-top: 1em;
     
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.closed{
+    background-color: red;
+    border-color: rgb(216, 94, 60);
+    text-decoration: line-through;
+}
+.open{
+    background-color: rgb(10, 137, 10);
+}
+
+.button {
+    background-color: #13c6e1;
+    border-radius: 8px;
+    flex-basis: 40%;
+    height: 2em;
+    margin-bottom: .5em;
+    text-align: center;
+    text-decoration: none;
+    padding: .5em;
+    
+    /* Button Text Colors */
+    text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 100;
 }
