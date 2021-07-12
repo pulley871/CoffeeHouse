@@ -1,6 +1,10 @@
 body{
-    background-color: black;
+    /* background-color: black; */
+    background-image: url("coffee.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
     color: whitesmoke;
+    font-weight: bolder;
 }
 /* Coffee House Names */
 h4{
@@ -43,9 +47,23 @@ h4{
     background-color: red;
     border-color: rgb(216, 94, 60);
     text-decoration: line-through;
+    opacity: .90;
 }
 .open{
-    background-color: rgb(10, 137, 10);
+    background-color: green; /*for compatibility with older browsers*/
+	background-image: linear-gradient(green,lightgreen);;
+    opacity: .90;
+}
+.open:after{
+	
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+.open:hover{
+	background: linear-gradient(#073,#0fa);
 }
 /* Design for the individual buttons */
 .button {
@@ -64,4 +82,10 @@ h4{
 	font-size: 25px;
 	font-family: sans-serif;
 	font-weight: 100;
+}
+.button:hover{
+    background-color: rgb(4, 47, 120);
+}
+.button:active{
+    background-color: rgb(67, 176, 165);
 }
