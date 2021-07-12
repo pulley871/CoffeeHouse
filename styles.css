@@ -2,10 +2,12 @@ body{
     background-color: black;
     color: whitesmoke;
 }
+/* Coffee House Names */
 h4{
     font-size: 200%;
     text-align: center;
 }
+/* Main Page Title */
 .pageHeader{
     display: flex;
     justify-content: center;
@@ -13,12 +15,14 @@ h4{
     margin-bottom: 2rem;
     
 }
+/* Container for all .shop elements */
 .list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/* Each individual coffee house */
 .shop{
     border: 1px solid rgb(102, 232, 38);
     border-radius: 8px;
@@ -28,11 +32,13 @@ h4{
     margin-top: 1em;
     
 }
+/* Contains all the <a> elements for each coffee house */
 .button-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+/* Coffee House status OPEN or CLOSED */
 .closed{
     background-color: red;
     border-color: rgb(216, 94, 60);
@@ -41,7 +47,7 @@ h4{
 .open{
     background-color: rgb(10, 137, 10);
 }
-
+/* Design for the individual buttons */
 .button {
     background-color: #13c6e1;
     border-radius: 8px;
